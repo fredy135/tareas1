@@ -75,23 +75,23 @@ int main( ) {
     
     //Realizar la conversión según la unidad seleccionada
     switch (opcion) {
-        case 1:
+        caso 1:
             longitud_convertida = longitud_cm / 100;
             unidad_destino = "metros";
             break;
-        case 2:
+        caso 2:
             longitud_convertida = longitud_cm / 91.44;
             unidad_destino = "yardas";
             break;
-        case 3:
+        caso 3:
             longitud_convertida = longitud_cm / 50.8;
             unidad_destino = "varas";
             break;
-        case 4:
+        caso 4:
             longitud_convertida = longitud_cm / 2.54;
             unidad_destino = "pulgadas";
             break;
-        case 5:
+        caso 5:
             longitud_convertida = longitud_cm / 30.48;
             unidad_destino = "pies";
             break;
@@ -113,40 +113,50 @@ codigo escrito en python
 
 ´´´
 
-
 #Ingresar la longitud en centímetros
+
 longitud_cm = float(input("Ingresa la longitud en centímetros: "))
 
 #Seleccionar la unidad de conversión
-print("Selecciona a qué unidad deseas convertir:")
-print("1. Metros")
-print("2. Yardas")
-print("3. Varas")
-print("4. Pulgadas")
-print("5. Pies")
-opcion = int(input())
+
+    print("Selecciona a qué unidad deseas convertir:")
+    print("1. Metros")
+    print("2. Yardas")
+    print("3. Varas")
+    print("4. Pulgadas")
+    print("5. Pies")
+    opcion = int(input())
 
 #Realizar la conversión según la unidad seleccionada
+
 if opcion == 1:
+
     longitud_convertida = longitud_cm / 100
     unidad_destino = "metros"
 elif opcion == 2:
+
     longitud_convertida = longitud_cm / 91.44
     unidad_destino = "yardas"
 elif opcion == 3:
+
     longitud_convertida = longitud_cm / 50.8
     unidad_destino = "varas"
 elif opcion == 4:
+
     longitud_convertida = longitud_cm / 2.54
     unidad_destino = "pulgadas"
 elif opcion == 5:
+
     longitud_convertida = longitud_cm / 30.48
     unidad_destino = "pies"
 else:
+
     print("Opción no válida")
     exit(1)
 
 #Mostrar el resultado de la conversión
+
 print(f"La longitud de {longitud_cm} centímetros es igual a {longitud_convertida} {unidad_destino}")
 
 ´´´
+
